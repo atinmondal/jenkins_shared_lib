@@ -8,7 +8,7 @@
 // Docker image scan for ECR image
 def call(String aws_account_id,String region, String ecrRepositoryName){
     sh """
-        trivy image ${ecrRepositoryName}:latest ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/${ecrRepositoryName}:latest > trivyScan.txt
+        trivy image ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/${ecrRepositoryName}:latest > trivyScan.txt
         cat trivyScan.txt
     """ 
 }
