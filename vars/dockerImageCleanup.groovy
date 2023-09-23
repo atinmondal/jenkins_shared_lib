@@ -5,7 +5,7 @@
 //     """ 
 // }
 
-Docker image cleanup for ECR
+// Docker image cleanup for ECR
 
 def call(String aws_account_id,String region, String ecrRepositoryName){
     sh """
