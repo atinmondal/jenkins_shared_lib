@@ -1,9 +1,9 @@
-def call(String projectName,String imageTag, String dockerHubUser){
-    sh """
-        docker rmi ${dockerHubUser}/${projectName}:${imageTag}
-        docker rmi ${dockerHubUser}/${projectName}:latest
-    """ 
-}
+// def call(String projectName,String imageTag, String dockerHubUser){
+//     sh """
+//         docker rmi ${dockerHubUser}/${projectName}:${imageTag}
+//         docker rmi ${dockerHubUser}/${projectName}:latest
+//     """ 
+// }
 
 // Docker image cleanup for ECR
 
