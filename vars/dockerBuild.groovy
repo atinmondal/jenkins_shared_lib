@@ -6,7 +6,7 @@
 //     """ 
 // }
 
-Docker Build for ECR
+// Docker Build for ECR
 def call(String aws_account_id,String region, String ecrRepositoryName){
     sh """
         docker build -t ${ecrRepositoryName} .
